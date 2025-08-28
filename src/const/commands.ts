@@ -6,24 +6,24 @@ commands.set("motd", motdText());
 commands.set("whoami", "root");
 commands.set("touch", "Why would you touch anything?");
 commands.set("rm", "Why would you remove anything?");
-commands.set("cat", "Here's a cute cat for you! 😊");
+commands.set("show_automations", "Here' you go! 😊");
 commands.set("about", aboutText());
 commands.set("pwd", "/");
 commands.set("date", new Date().toLocaleString());
 commands.set("projects", projectsText());
 commands.set("kali", kaliLogo());
 commands.set("ls", projectsText());
-commands.set("github", openLink("https://github.com/0l1v3rr"));
-commands.set("linkedin", openLink("https://www.linkedin.com/in/0l1v3rr"));
-commands.set("repo", openLink("https://github.com/0l1v3rr/0l1v3rr.github.io"));
-commands.set("email", openLink("mailto:oliver.mrakovics@gmail.com"));
+commands.set("github", openLink("https://github.com/intigration"));
+commands.set("linkedin", openLink("https://www.linkedin.com/in/engr-farhan"));
+commands.set("repo", openLink("https://github.com/intigration/"));
+commands.set("email", openLink("mailto:engr.farhan@icloud.com"));
 commands.set(
   "codersrank",
-  openLink("https://profile.codersrank.io/user/0l1v3rr/")
+  openLink("https://hub.docker.com/u/intigration/")
 );
 commands.set(
   "socials",
-  "Usage: [command]<br><br>github, linkedin, email, codersrank"
+  "Usage: [command]<br><br>github, linkedin, email, docker"
 );
 commands.set("help", helpText());
 commands.set("techstack", techStack());
@@ -34,22 +34,22 @@ export const getCommandByName = (name: string): string => {
   // commands that require redirecting
   switch (name) {
     case "github":
-      window.open("https://github.com/0l1v3rr", "_blank");
+      window.open("https://github.com/intigration", "_blank");
       break;
     case "repo":
-      window.open("https://github.com/0l1v3rr/0l1v3rr.github.io", "_blank");
+      window.open("https://github.com/initgration", "_blank");
       break;
     case "linkedin":
-      window.open("https://www.linkedin.com/in/0l1v3rr", "_blank");
+      window.open("https://www.linkedin.com/in/engr-farhan", "_blank");
       break;
     case "email":
-      window.open("mailto:oliver.mrakovics@gmail.com", "_blank");
+      window.open("mailto:engr.farhan@icloud.com", "_blank");
       break;
     case "codersrank":
-      window.open("https://profile.codersrank.io/user/0l1v3rr/", "_blank");
+      window.open("https://hub.docker.com/u/intigration", "_blank");
       break;
-    case "cat":
-      window.open("https://cataas.com/cat/cute", "_blank");
+    case "show_automations":
+      window.open("https://qa-supervisor.vercel.app/automation", "_blank");
       break;
   }
 
@@ -67,20 +67,21 @@ export const getCommandNames = (): string[] => {
 
 export function motdText(): string {
   return `
-    Welcome to 0l1v3rr.github.io!<br>
+<dl>Welcome to the root!
+  <dt><strong>I am Autonomous</strong><dd> Operates independently once configured</dd>
+  
+  <dt><strong>I am Reactive to</strong><dd>  Responds to changes in system state</dd>
+  
+  <dt><strong>I am Proactive</strong><dd>  Can predict and prevent issues</dd>
+  
+  <dt><strong>Collaborative</strong></dt>
+  <dd>Communicates with other peers for coordinated actions</dd>
+  
+  <dt><strong>Resilient</strong></dt>
+  <dd>Handles failures gracefully and recovers automatically</dd>
+      <br>&nbsp;* Type 'help' to see the list of available commands.
 
-    <br>&nbsp;* GitHub: 
-    <a class="terminal-link" href="https://github.com/0l1v3rr" target="_blank" rel="noreferrer">
-      https://github.com/0l1v3rr
-    </a>
-
-    <br>&nbsp;* Repo: 
-    <a class="terminal-link" href="https://github.com/0l1v3rr/0l1v3rr.github.io" target="_blank" rel="noreferrer">
-      https://github.com/0l1v3rr/0l1v3rr.github.io
-    </a>
-
-    <br>
-    <br>&nbsp;* Type 'help' to see the list of available commands.
+</dl>
   `;
 }
 
@@ -104,23 +105,25 @@ function aboutText(): string {
     Hello, root!
     <br><br>
 
-    I'm a passionate <span class="terminal-bold">Full-Stack Web Developer</span> from <span class="terminal-bold">Hungary</span>.
-    <br>
-    Most of the time, I work with <span class="terminal-bold">TypeScript</span>, but I love <span class="terminal-bold">Go</span> as well.
-
-    <br><br>
-    Mentionable tools I use on a daily basis:
-    <br>
-    &nbsp; * <span class="terminal-bold">Backend</span>: Laravel, Golang
-    <br>
-    &nbsp; * <span class="terminal-bold">Frontend</span>: React, TailwindCSS, TypeScript
-    <br>
-    &nbsp; * <span class="terminal-bold">Other</span>: Docker, Git
-    <br><br>
-
-    Would you like to connect with me? Enter the 'socials' command!<br>
-    Want to take a look at my projects? 
-    Enter the 'projects' command or visit my GitHub with the 'github' command!
+<dl>
+  <dt><strong>Industrial Automation Specialist</strong></dt>
+  <dd>Expert in next-generation control systems and industrial IoT solutions</dd>
+  
+  <dt><strong>Data, Solution and Systems Architect</strong></dt>
+  <dd>Specializes in memory-safe, high-performance concurrent systems engineering</dd>
+  
+  <dt><strong>Lock-Free Industrial Automation Expert</strong></dt>
+  <dd>Designs real-time automation systems</dd>
+  
+  <dt><strong>Process, Quality and Performance Optimization</strong></dt>
+  <dd>Achieves microsecond latencies and million+ signal throughput</dd>
+  
+  <dt><strong>Cloud-Native Automation</strong></dt>
+  <dd>Pioneers modern distributed architectures for industrial applications</dd>
+  
+  <dt><strong>Open Source Advocate</strong></dt>
+  <dd>Develops cutting-edge automation tools with permissive licensing</dd>
+</dl>
   `;
 }
 
@@ -220,5 +223,5 @@ function kaliLogo() {
 }
 
 function techStack() {
-  return `<a href="https://github.com/0l1v3rr/github-readme-tech-stack" target="_blank"><img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech%20Stack&align=center&titleAlign=center&fontSize=20&lineCount=2&theme=0l1v3rr&line1=laravel,laravel,auto;go,golang,00add8;docker,docker,auto;&line2=react,react,2d79c7;tailwindcss,tailwind,38bdf8;typescript,typescript,2d79c7;&width=420" alt="My Tech Stack" /></a>`;
+  return `<a href="https://github.com/intigration" target="_blank"><img src="https://avatars.githubusercontent.com/u/25178774?v=4" /></a>`;
 }

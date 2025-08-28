@@ -1,43 +1,91 @@
 interface Project {
   name: string;
   link: string;
-  category: "frontend" | "backend" | "fullstack" | "other";
+  category: string;
+  // category: "frontend" | "backend" | "fullstack" | "other";
 }
 
 export const projects: Project[] = [
+
   {
-    name: "GitHub README Tech Stack",
-    link: "https://github.com/0l1v3rr/github-readme-tech-stack?ref=0l1v3rr.github.io",
-    category: "fullstack",
+    "name": "Data Factory Connectors",
+    "link": "https://learn.microsoft.com/en-us/fabric/data-factory/data-factory-overview",
+    "category": "Data Sources & Acquisition"
   },
   {
-    name: "CLI File Manager",
-    link: "https://github.com/0l1v3rr/cli-file-manager?ref=0l1v3rr.github.io",
-    category: "other",
+    "name": "OneLake Unified Storage",
+    "link": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview",
+    "category": "Data Storage"
   },
   {
-    name: "Pathfinding Visualizer",
-    link: "https://github.com/0l1v3rr/pathfinding-visualizer?ref=0l1v3rr.github.io",
-    category: "frontend",
+    "name": "Delta Lake Support",
+    "link": "https://learn.microsoft.com/en-us/fabric/delta-lake/overview",
+    "category": "Storage Architecture"
   },
   {
-    name: "Hangman Game",
-    link: "https://github.com/0l1v3rr/hangman-game?ref=0l1v3rr.github.io",
-    category: "frontend",
+    "name": "Microsoft Purview Integration",
+    "link": "https://learn.microsoft.com/en-us/fabric/security/governance",
+    "category": "Security"
   },
   {
-    name: "Portfolio Website",
-    link: "https://github.com/0l1v3rr/0l1v3rr.github.io?ref=0l1v3rr.github.io",
-    category: "frontend",
+    "name": "Data Lineage & Governance",
+    "link": "https://learn.microsoft.com/en-us/fabric/security/governance",
+    "category": "Data Governance"
   },
   {
-    name: "Port Scanner",
-    link: "https://github.com/0l1v3rr/port-scanner?ref=0l1v3rr.github.io",
-    category: "other",
+    "name": "On-premises Data Gateway",
+    "link": "https://learn.microsoft.com/en-us/data-integration/gateway/",
+    "category": "Deployment Options"
   },
   {
-    name: "Subnet Calculator",
-    link: "https://github.com/0l1v3rr/subnet-calculator?ref=0l1v3rr.github.io",
-    category: "other",
+    "name": "Data Transformations",
+    "link": "https://learn.microsoft.com/en-us/fabric/data-factory/transformations",
+    "category": "Data Processing & Integration"
   },
+  {
+    "name": "Power BI Integration",
+    "link": "https://learn.microsoft.com/en-us/fabric/business-intelligence/power-bi-overview",
+    "category": "Analytics & Visualization"
+  },
+  {
+    "name": "Fabric Data Science",
+    "link": "https://learn.microsoft.com/en-us/fabric/data-science/overview",
+    "category": "Advanced Analytics"
+  },
+  {
+    "name": "Event Streams",
+    "link": "https://learn.microsoft.com/en-us/fabric/real-time-analytics/event-streams-overview",
+    "category": "Real-Time Analytics"
+  },
+  {
+    "name": "Auto-scaling Compute",
+    "link": "https://learn.microsoft.com/en-us/fabric/enterprise/compute",
+    "category": "Performance & Scalability"
+  },
+  {
+    "name": "Power Query Interface",
+    "link": "https://learn.microsoft.com/en-us/power-query/",
+    "category": "User Experience"
+  },
+  {
+    "name": "REST APIs & SDKs",
+    "link": "https://learn.microsoft.com/en-us/fabric/developer/",
+    "category": "Integration & Extensibility"
+  },
+  {
+    "name": "Real-time Dashboards",
+    "link": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-real-time-streaming",
+    "category": "Dashboard & Reporting"
+  },
+  {
+    "name": "Fabric Capacity Licensing",
+    "link": "https://learn.microsoft.com/en-us/fabric/enterprise/licensing",
+    "category": "Licensing"
+  },
+  {
+    "name": "Microsoft Learn Training",
+    "link": "https://learn.microsoft.com/en-us/training/fabric/",
+    "category": "Training"
+  }
+
 ];

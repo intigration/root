@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "new" branch
+  push:
+    branches: [ "new" ]
+  pull_request:
+    branches: [ "new" ]
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 18
+          - 20
+          - 22
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm run build
